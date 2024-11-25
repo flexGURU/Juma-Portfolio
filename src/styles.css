@@ -13,6 +13,10 @@
     @apply bg-custom-blue-1;
 }
 
+.bg-about {
+    @apply bg-custom-blue-3;
+}
+
 .btn {
     @apply  bg-blue-500 p-4 rounded-full border border-white hover:bg-blue-400 text-center;
 }
