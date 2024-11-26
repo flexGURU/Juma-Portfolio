@@ -9,6 +9,11 @@
     @apply bg-gradient-to-r from-custom-blue-1 to-custom-blue-2;
 }
 
+.bg-navbar {
+    @apply bg-custom-blue-2 bg-opacity-55;
+
+}
+
 .bg-home {
     @apply bg-custom-blue-1;
 }
@@ -18,5 +23,5 @@
 }
 
 .btn {
-    @apply  bg-blue-500 p-4 rounded-full border border-white hover:bg-blue-400 text-center;
+    @apply  bg-blue-500 p-3 rounded-full border border-white hover:bg-blue-400 text-center;
 }
