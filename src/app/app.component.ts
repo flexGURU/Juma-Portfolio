@@ -7,11 +7,13 @@ import { WorkComponent } from "./components/work/work.component";
 import { SkillsComponent } from "./components/skills/skills.component";
 import { TalksComponent } from "./components/talks/talks.component";
 import { BlogComponent } from './components/blog/blog.component';
+import { TestimonialsComponent } from "./components/testimonials/testimonials.component";
+import { ContactComponent } from "./components/contact/contact.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, HomeComponent, AboutComponent, WorkComponent, SkillsComponent, TalksComponent, BlogComponent],
+  imports: [NavbarComponent, HomeComponent, AboutComponent, WorkComponent, SkillsComponent, TalksComponent, BlogComponent, TestimonialsComponent, ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

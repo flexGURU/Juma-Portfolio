@@ -1,4 +1,4 @@
-<div class="bg-about text-white font-serif mx-auto p-20 min-h-screen">
+<div class="bg-about text-white font-serif mx-auto p-20 min-h-screen flex flex-col justify-evenly items-center">
 
     <div class="flex flex-row items-center justify-center gap-4 mb-7">
         <i class="fa-solid fa-newspaper text-3xl text-[#1e90ff]"></i>
@@ -6,9 +6,9 @@
         
     </div>
 
-    <div class="relative mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 max-w-screen-lg items-center">
-        <div class="my-4 cursor-pointer bg-[#0b1a41] rounded-t-lg overflow-hidden border border-gray-600 rounded-lg shadow flex flex-col h-full">
-            <img src="../../../assets/azubi.jpg" class="mb-4 w-full object-cover h-48" alt="">
+    <div class="relative mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-2xl md:max-w-screen-xl items-center">
+        <div class="my-4 cursor-pointer bg-[#0b1a41] rounded-t-lg overflow-hidden border border-gray-600 rounded-lg shadow flex flex-col h-full hover:shadow-2xl ">
+            <img src="../../../assets/azubi.jpg" class="mb-4 w-full object-cover h-48 hover:scale-105 duration-500" alt="">
             <div class="p-4 flex flex-col flex-grow">
                 <h4 class="font-bold mb-3">The Azubi Africa Cloud Wave</h4>
                 <p class="text-sm text-slate-400 flex-grow">
@@ -18,17 +18,23 @@
                     These roles include Cloud Architect, AWS Solutions Architect, Cloud Engineer, and AWS Developer.
                 </p>
     
-                <a href="#" class="mt-3 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
+                <div class="flex flex-row justify-evenly">
+                    
+                    <a href="#" class="inline-flex w-15 items-center p-1 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+    
+                    <p class="absolute top-0 left-0 m-2 p-1 text-sm bg-blue-600 rounded-lg text-white">4 min</p>
+    
+                    </div>
             </div>
         </div>
     
-        <div class="my-4 cursor-pointer bg-[#0b1a41] rounded-t-lg overflow-hidden border border-gray-600 rounded-lg shadow flex flex-col h-full">
-            <img src="../../../assets/roles.jpeg" class="mb-4 w-full object-cover h-48" alt="">
+        <div class="relative my-4 cursor-pointer bg-[#0b1a41] rounded-t-lg overflow-hidden border border-gray-600 rounded-lg shadow flex flex-col h-full hover:shadow-2xl">
+            <img src="../../../assets/roles.jpeg" class="mb-4 w-full object-cover h-48 hover:scale-105 duration-500" alt="">
             <div class="p-4 flex flex-col flex-grow">
                 <h4 class="font-bold mb-3">Aws Cloud Roles</h4>
                 <p class="text-sm text-slate-400 flex-grow">
@@ -37,18 +43,25 @@
                     There are many different roles in AWS, and each of them plays a vital role in making sure that your organization is successful. 
                     But what does it mean to be a cloud architect?
                 </p>
-    
-                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+
+                <div class="flex flex-row justify-evenly">
+                    
+                <a href="#" class="inline-flex w-15 items-center p-1 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     Read more
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg>
                 </a>
+
+                <p class="p-1 text-sm absolute top-0 left-0 m-2  bg-blue-600 rounded-lg text-white">4 min</p>
+
+                </div>
+    
             </div>
         </div>
     
-        <div class="my-4 cursor-pointer bg-[#0b1a41] rounded-t-lg overflow-hidden border border-gray-600 rounded-lg shadow flex flex-col h-full">
-            <img src="../../../assets/mon.jpeg" class="mb-4 w-full object-cover h-48" alt="">
+        <div class="relative my-4 cursor-pointer bg-[#0b1a41] rounded-t-lg overflow-hidden border border-gray-600 rounded-lg shadow flex flex-col h-full hover:shadow-2xl">
+            <img src="../../../assets/mon.jpeg" class="mb-4 w-full object-cover h-48 hover:scale-105 duration-500" alt="">
             <div class="p-4 flex flex-col flex-grow">
                 <h4 class="font-bold mb-3">Traditional Monolithic vs 3-Tier Architectures</h4>
                 <p class="text-sm text-slate-400 flex-grow">
@@ -56,12 +69,18 @@
                     One popular option is the 3-tier architecture, which is a variation of the traditional monolithic architecture. In this post, we'll discuss the two architectures, highlighting their pros and cons.
                 </p>
     
-                <a href="#" class="mt-3 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
+                <div class="flex flex-row justify-evenly">
+                    
+                    <a href="#" class="inline-flex w-15 items-center p-1 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+    
+                    <p class="p-1 text-sm absolute top-0 left-0 m-2  bg-blue-600 rounded-lg text-white">4 min</p>
+    
+                    </div>
             </div>
         </div>
     </div>
