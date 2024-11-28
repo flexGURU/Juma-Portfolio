@@ -27,5 +27,5 @@
 }
 
 .input-form {
-    @apply border rounded bg-custom-blue-3 px-4 py-2;
+    @apply border border-gray-600 rounded bg-custom-blue-3 px-4 py-2;
 }

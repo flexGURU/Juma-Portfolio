@@ -1,51 +1,59 @@
-<div class="bg-about text-white font-serif mx-auto p-10 h-auto items-center">
+<div class="bg-about text-white text-base font-serif mx-auto p-4 md:p-10 h-auto items-center">
 
     <div class="flex justify-center items-center font-bold text-2xl mt-6 mb-8 ">
-        <i class="fa-regular fa-address-book text-3xl text-[#1e90ff] mr-4"></i>        
+        <i class="fa-regular fa-address-book text-xl md:text-3xl text-[#1e90ff] mr-4"></i>        
         <div class="flex flex-col justify-center items-center">
-            <p class="text-4xl tracking-widest">Contact Me</p>
-            <hr class="w-1/3 border-2 border-blue-700 mt-4">
+            <p class="text-2xl md:text-4xl tracking-widest">
+                <span class="text-[#1e90ff]">Get in</span>
+                <span> Touch</span>
+            </p>
+        <hr class="w-1/3 border-2 border-[#1e90ff] rounded-lg mt-4">
         </div>
 
     </div>
 
  
-    <div class="relative mx-auto max-w-screen-xl items-center">
+    <div class="relative mx-auto max-w-screen-lg items-center">
 
-        <div class="grid grid-cols-3 gap-20 bg-custom-blue-4 border border-blue-500 rounded-2xl my-8 shadow-2xl p-10">
+        <div class="grid md:grid-cols-3 gap-6 md:gap-20 bg-custom-blue-4  rounded-2xl  shadow-2xl p-4 md:p-10">
     
 
             <div class="col-span-1">
-                <div class="flex flex-col justify-evenly h-full">
+                <div class="flex flex-col justify-evenly gap-2 h-full">
                     <div class="flex flex-row items-center">
-                        <i class="fa-regular fa-envelope text-3xl p-2 border border-gray-400 rounded-lg bg-custom-blue-3"></i>
+                        <i class="fa-regular fa-envelope text-2xl p-2 border border-gray-400 rounded-lg bg-custom-blue-3 hover:rotate-12 duration-300 cursor-pointer"></i>
                         <div class="ml-4">
-                            <h1 class="text-xl font-bold text-blue-400">Email</h1>
+                            <p class="text-xl font-bold text-blue-400">Email</p>
                             <p>mukunajohn329&#64;gmail.com</p>
                         </div>
                     </div>
             
                     <div class="flex flex-row items-center">
-                        <i class="fa-solid fa-phone text-3xl p-2 border border-gray-400 rounded-lg bg-custom-blue-3"></i>
+                        <i class="fa-solid fa-phone text-2xl p-2 border border-gray-400 rounded-lg bg-custom-blue-3 hover:rotate-12 duration-300 cursor-pointer "></i>
                         <div class="ml-4">
-                            <h1 class="text-xl font-bold text-blue-400">Phone Number</h1>
+                            <p class="text-xl font-bold text-blue-400">Phone Number</p>
                             <p>12345678</p>
                         </div>
                     </div>
 
-                    <div class="flex flex-row justify-evenly">
 
-                        <div class="text-white text-center bg-gray-800 rounded-full border border-white p-2 w-14">
+                    <div class="block md:hidden">
+                        <p>Let's Connect</p>
+                    </div>
+
+                    <div class="flex flex-row text-white justify-between md:justify-evenly mt-2 md:mt-0">                 
+
+                        <div class="text-gray-400 text-base text-center bg-gray-800 rounded-full border border-white p-2 w-14">
                             <i class="fa-brands fa-github text-3xl"></i>
                         </div>
 
-                        <div class=" text-white text-center bg-[#1e90ff] rounded-full border border-white p-2 w-14 ">
+                        <div class=" text-gray-400 text-base text-center bg-[#1e90ff] rounded-full border border-white p-2 w-14 ">
                             <a href="">
                             <i class="fa-brands fa-linkedin-in text-3xl"></i>    
                             </a>
                         </div>    
             
-                        <div class=" text-white text-center bg-white rounded-full border-2 border-black p-2 w-14 ">
+                        <div class=" text-gray-400 text-base text-center bg-white rounded-full border-2 border-black p-2 w-14 ">
                             <a href="">
                                 
                                 <svg xmlns="http://www.w3.org/2000/svg" 
@@ -61,15 +69,14 @@
 
             <div class="col-span-2 flex flex-col justify-evenly h-full ">
                 <div class="">
-                    <h1 class="text-3xl font-bold">Let's Architect Your Future</h1>
-                    <p class="font-light text-gray-400">"In the cloud, complexity is not a challenge—it's an opportunity to innovate."</p>
+                    <p class="text-xl md:text-3xl font-bold">Let's Architect Your Future</p>
                     <hr class="text-3xl my-4">
                 </div>
     
-                <div class="flex flex-col justify-evenly gap-6">
+                <div class="flex flex-col justify-evenly ">
 
-                    <form action="" class="flex flex-col gap-6">
-                        <div class="flex flex-col gap-4">
+                    <form action="" class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-1">
                             <label for="name">Your Name</label>
                             <input 
                             type="text" 
@@ -79,7 +86,7 @@
                             class="input-form">
                         </div>
                 
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-1">
                             <label for="email">Your Email</label>
                             <input 
                             type="email" 
@@ -89,7 +96,7 @@
                             class="input-form">
                         </div>
                 
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-1">
                             <label for="subject">Subject</label>
                             <input 
                             type="text" 
@@ -99,7 +106,7 @@
                             class="input-form">
                         </div>
                 
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-1">
                             <label for="message">Your Message</label>
                             <textarea 
                             id="message" 
@@ -109,7 +116,7 @@
                         </textarea>
                         </div>
 
-                        <div class="flex mt-4 justify-center">
+                        <div class="flex justify-center">
                             <button class="btn w-3/4 flex flex-row justify-center items-center gap-2">
                                 <i class="fa-solid fa-paper-plane text-xl"></i>
                                 <p> Send Message</p>
