@@ -23,5 +23,9 @@
 }
 
 .btn {
-    @apply  bg-blue-500 p-3 rounded-full border border-white hover:bg-blue-400 text-center;
+    @apply  bg-blue-500 p-3 rounded-full border border-white hover:bg-gray-900 text-center;
+}
+
+.input-form {
+    @apply border rounded bg-custom-blue-3 px-4 py-2;
 }
