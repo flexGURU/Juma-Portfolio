@@ -12,25 +12,25 @@
         <!-- Desktop Navigation -->
         <div class="hidden md:block flex-grow">
           <ul class="flex justify-center items-center gap-12">
-            <li><a href="">About Me</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Achievements</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Contact Me</a></li>
+            <li class="font-bold hover:text-blue-500 hover:border-b-2 border-[#1e90ff]"><a href="" routerLink=""  fragment="about">About Me</a></li>
+            <li class="font-bold hover:text-blue-500 hover:border-b-2 border-[#1e90ff]"><a href="" routerLink=""  fragment="work">Work</a></li>
+            <li class="font-bold hover:text-blue-500 hover:border-b-2 border-[#1e90ff]"><a href="" routerLink=""  fragment="skills">Skills</a></li>
+            <li class="font-bold hover:text-blue-500 hover:border-b-2 border-[#1e90ff]"><a href="" routerLink=""  fragment="talks">Gallery</a></li>
+            <li class="font-bold hover:text-blue-500 hover:border-b-2 border-[#1e90ff]"><a href="" routerLink=""  fragment="blogs">Blogs</a></li>
           </ul>
         </div>
 
         <!-- Mobile Menu Button -->
         <button 
           class="block md:hidden text-white"
-          (click)="toggle($event)"
+          (click)="toggle()"
         >
           <i [ngClass]="isMenuOpen ? 'fa-solid fa-xmark text-2xl' : 'fa-solid fa-bars text-2xl'"></i>
         </button>
 
         <!-- Connect Button -->
         <div class="hidden md:block">
-          <button class="btn">
+          <button class="btn" routerLink="" fragment="contact">
             Let's Connect
           </button>
         </div>
@@ -42,11 +42,11 @@
         [ngClass]="{'hidden': !isMenuOpen}"
       >
         <ul class="flex flex-col ml-8 gap-4">
-          <li><a href="">About Me</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Achievements</a></li>
-          <li><a href="">Gallery</a></li>
-          <li><a href="">Contact Me</a></li>
+          <li><a href="" routerLink="" fragment="about">About Me</a></li>
+          <li><a href="" routerLink="" fragment="work">Work</a></li>
+          <li><a href="" routerLink="" fragment="skills">Skills</a></li>
+          <li><a href="" routerLink="" fragment="talks">Gallery</a></li>
+          <li><a href="" routerLink="" fragment="blogs">Blogs</a></li>
           <li>
             <!-- Optional Connect Button for Mobile -->
           </li>

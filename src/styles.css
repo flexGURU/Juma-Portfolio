@@ -27,5 +27,9 @@
 }
 
 .input-form {
-    @apply border border-gray-600 rounded bg-custom-blue-3 px-4 py-2;
+    @apply border border-custom-blue-4 rounded bg-custom-blue-3 px-4 py-2;
+}
+
+.active {
+    @apply border-b-4 border-[#1e90ff];
 }

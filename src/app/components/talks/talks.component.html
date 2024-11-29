@@ -70,7 +70,7 @@
     </div>
     
     
-    <div class="p-4 md:mt-10">
+    <div class="hidden md:block p-4 md:mt-10">
 
         <div class="flex flex-col items-center ">
             <hr class="w-full md:w-1/2 border-b-4 border-gray-300 rounded-lg">
@@ -125,6 +125,54 @@
 
         </div>
     
+    </div>
+
+    <div class="my-4 md:hidden">
+
+        <div class="flex flex-col items-center ">
+            <hr class="w-full md:w-1/2 border-b-4 border-gray-300 rounded-lg">
+            <div class="flex flex-row items-center gap-4 text-3xl ">
+                <i class="fa-regular fa-image text-[#1e90ff]"></i>
+               <h1 class="text-3xl  p-3 rounded-lg my-3">Gallery</h1>
+            </div>
+            <hr class="w-1/2 md:w-1/6 mb-14 border-b-4 border-gray-300 rounded-lg">
+
+        </div>
+
+        <swiper-container 
+        loop="true" 
+        navigation="true"
+        pagination="true"
+        speed="500"
+        effect="cards" grab-cursor="true"
+        class="flex items-center justify-center"
+        >
+                <swiper-slide class="flex justify-center">
+                  <img src="../../../assets/1.jpg"
+                  class="rounded-lg" />
+                </swiper-slide>
+                <swiper-slide class="flex justify-center">
+                  <img src="../../../assets/2.jpg"
+                  class="rounded-lg" />
+                </swiper-slide>
+                <swiper-slide class="flex justify-center">
+                  <img src="../../../assets/3.jpg"
+                  class="rounded-lg" />
+                </swiper-slide>
+                <swiper-slide class="flex justify-center">
+                  <img src="../../../assets/4.jpg"
+                  class="rounded-lg" />
+                </swiper-slide>
+                <swiper-slide class="flex justify-center">
+                  <img src="../../../assets/5.jpg"
+                  class="rounded-lg " />
+                </swiper-slide>
+                <swiper-slide class="flex justify-center">
+                  <img src="../../../assets/6.jpg"
+                  class="rounded-lg" />
+                </swiper-slide>
+              
+        </swiper-container>
     </div>
    
 
