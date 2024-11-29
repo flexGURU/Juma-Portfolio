@@ -33,3 +33,7 @@
 .active {
     @apply border-b-4 border-[#1e90ff];
 }
+
+.is-invalid {
+    @apply border border-red-500;
+}
