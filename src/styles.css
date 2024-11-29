@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Fredoka:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-
+@layer base {
+    html {
+        font-family:
+    }
+}
 
 .bg-nav {
     @apply bg-gradient-to-r from-custom-blue-1 to-custom-blue-2;
@@ -37,3 +42,5 @@
 .is-invalid {
     @apply border border-red-500;
 }
+
+

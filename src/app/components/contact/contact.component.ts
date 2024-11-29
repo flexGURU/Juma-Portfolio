@@ -25,6 +25,7 @@ export class ContactComponent {
       email: ['', Validators.required],
       subject: ['', Validators.required],
       message: ['', Validators.required],
+      to_name: 'mukuna',
 
     })
   }
@@ -40,8 +41,9 @@ export class ContactComponent {
 
     emailjs.init('-H-AP4PFvRyThJ50N')
     let response = await emailjs.send('service_5vq42js', 'template_k1m3qny', {
-      name: this.contactDetails.value.name,
-      email: this.contactDetails.value.email,
+      from_name: this.contactDetails.value.name,
+      to_name: this.contactDetails.value.to_name,
+      from_email: this.contactDetails.value.email,
       subject: this.contactDetails.value.subject,
       message: this.contactDetails.value.message
     })

@@ -10,6 +10,9 @@ module.exports = {
         'custom-blue-2': '#10162a',
         'custom-blue-3': '#052b65',
         'custom-blue-4': '#00468b',
+      },
+      fontFamily: {
+        cormorant: ['Cormorant', 'serif'],
       }
     },
   },
