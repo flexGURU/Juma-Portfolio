@@ -36,6 +36,10 @@ export class ContactComponent {
     return this.contactDetails.controls
   }
 
+  navigate(){
+    window.open('https://www.linkedin.com/in/james-juma-sindani/', "_blank")
+  }
+
 
   async submit(){
     console.log(this.contactDetails.value);
