@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import emailjs from '@emailjs/browser';
+import { emailJS } from '../../environments/environment.prod';
 
 @Component({
   selector: 'app-contact',
@@ -17,7 +18,8 @@ export class ContactComponent {
 
   constructor(
     private fb:FormBuilder, 
-    private toastr: ToastrService) 
+    private toastr: ToastrService,
+  ) 
 
     {
     this.contactDetails = this.fb.group({
@@ -25,7 +27,7 @@ export class ContactComponent {
       email: ['', Validators.required],
       subject: ['', Validators.required],
       message: ['', Validators.required],
-      to_name: 'mukuna',
+      to_name: 'James Juma Sindani',
 
     })
   }
@@ -35,12 +37,11 @@ export class ContactComponent {
   }
 
 
-
   async submit(){
     console.log(this.contactDetails.value);
 
-    emailjs.init('-H-AP4PFvRyThJ50N')
-    let response = await emailjs.send('service_5vq42js', 'template_k1m3qny', {
+    emailjs.init(emailJS.emailjsconfig.publicKey)
+    let response = await emailjs.send(emailJS.emailjsconfig.serviceId, emailJS.emailjsconfig.templateId, {
       from_name: this.contactDetails.value.name,
       to_name: this.contactDetails.value.to_name,
       from_email: this.contactDetails.value.email,

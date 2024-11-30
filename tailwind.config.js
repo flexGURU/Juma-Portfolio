@@ -12,7 +12,7 @@ module.exports = {
         'custom-blue-4': '#00468b',
       },
       fontFamily: {
-        cormorant: ['Cormorant', 'serif'],
+        cormorant: ["Alex Brush"],
       }
     },
   },

@@ -11,50 +11,18 @@
 
     <div class="relative mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 max-w-screen-lg items-center">
 
-        <div class="mb-4">
-            <div class="p-4 bg-[#0b1a41] text-center  rounded-lg">
-                <h3 class="font-bold p-4 text-xl md:text-2xl">Cloud Architecture and Design</h3>
-                <p class="p-4 text-slate-400 text-sm md:text-base">
-                    I specialize in creating secure and scalable cloud architectures. 
-                    My expertise spans multi-cloud platforms like AWS, Azure, and Google Cloud. 
-                    I excel in designing hybrid environments that integrate seamlessly with on-premise systems. 
+        <div 
+        *ngFor="let skill of skills"
+        class="mb-4">
+            <div class="p-2 md:p-4 bg-[#0b1a41] text-center  rounded-lg">
+                <h3 class="font-bold p-4 text-xl md:text-2xl"> {{skill.title}} </h3>
+                <p class="p-2 md:p-4 text-slate-400 text-sm md:text-base">
+                   {{skill.highlight}}
                 </p>                 
             </div>
         </div>
 
-        <div class="mb-4">
-            <div class="p-4 bg-[#0b1a41] text-center  rounded-lg">
-                <h3 class="font-bold p-4  text-xl md:text-2xl">Cloud Architecture and Design</h3>
-                <p class="p-4 text-slate-400 text-sm md:text-base">
-                    I specialize in creating secure and scalable cloud architectures. 
-                    My expertise spans multi-cloud platforms like AWS, Azure, and Google Cloud. 
-                    I excel in designing hybrid environments that integrate seamlessly with on-premise systems. 
-                </p>                 
-            </div>
-        </div>
-
-        <div class="mb-4">
-            <div class="p-4 bg-[#0b1a41] text-center  rounded-lg">
-                <h3 class="font-bold p-4 text-xl md:text-2xl">Cloud Architecture and Design</h3>
-                <p class="p-4 text-slate-400 text-sm md:text-base">
-                    I specialize in creating secure and scalable cloud architectures. 
-                    My expertise spans multi-cloud platforms like AWS, Azure, and Google Cloud. 
-                    I excel in designing hybrid environments that integrate seamlessly with on-premise systems. 
-                </p>                 
-            </div>
-        </div>
-
-        <div class="mb-4">
-            <div class="p-4 bg-[#0b1a41] text-center  rounded-lg">
-                <h3 class="font-bold p-4 text-2xl">Cloud Architecture and Design</h3>
-                <p class="p-4 text-slate-400 text-sm md:text-base">
-                    I specialize in creating secure and scalable cloud architectures. 
-                    My expertise spans multi-cloud platforms like AWS, Azure, and Google Cloud. 
-                    I excel in designing hybrid environments that integrate seamlessly with on-premise systems. 
-                </p>                 
-            </div>
-        </div>
-
+       
         
 
     </div>
