@@ -28,19 +28,21 @@
 
         <div class="mt-10 text-md h-full">
             <p class="text-center md:text-left tracking-wide md:text-lg">
-                Empowering businesses with seamless, scalable, and secure cloud solutions that drive innovation and efficiency. Transforming complex challenges into simple, agile solutions for a smarter, more connected future.
+                {{homes.content}}
             </p>
             
         </div>
 
         <div class="mt-10 flex flex-row items-center gap-10">
-            <button class="btn">
+            <button class="btn"  routerLink="" >
                 Get in Touch
                 <i class="fa-solid fa-arrow-right ml-2"></i>
             </button>
 
             <div class=" text-white text-center bg-[#1e90ff] rounded-full border border-white p-2 w-14 ">
-                <a href="">
+                <a href=""
+                (click)="navigate()"
+                >
                 <i class="fa-brands fa-linkedin-in text-3xl"></i>    
                 </a>
             </div>    

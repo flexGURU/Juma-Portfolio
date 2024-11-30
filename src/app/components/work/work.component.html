@@ -9,7 +9,7 @@
       <div class="hidden md:block p-4">
         <div
         *ngFor="let experince of experiences"
-        class="grid grid-cols-12 gap-16 bg-gradient-to-r from-[#0b1a41]  bg-[#0b1a41] border border-custom-blue-3 hover:border-blue-500 duration-500 p-6 mb-3 rounded-lg ">
+        class="work-card-lg">
             <div class="col-span-4 bg-blue-500 p-4 rounded-lg flex flex-col justify-between h-full">
                 <div>
                   <h1 class="text-xl font-thin block"> {{experince.title}} </h1>
@@ -47,7 +47,7 @@
       <div class="block md:hidden">
         <div 
         *ngFor="let experince of experiences"
-        class="grid grid-cols-1 gap-2 bg-gradient-to-r from-[#0b1a41]  bg-[#0b1a41] border border-custom-blue-3 hover:border-blue-500 duration-500 p-6 mb-3 rounded-lg">
+        class="work-card-sm">
           <div class="row-span-1 col-span-1 md:col-span-4 bg-blue-500 p-4 rounded-lg flex flex-col justify-between h-auto">
             <div>
               <h1 class="text-lg md:text-xl font-thin block"> {{experince.title}} </h1>
