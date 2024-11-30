@@ -35,7 +35,7 @@ export class BlogComponent {
 },
     {
       title: 'Traditional Monolithic vs 3-Tier Architectures',
-      time: '4 min',
+      time: '5 min',
       imgPath: '../../../assets/mon.jpeg',
       route: 'https://www.linkedin.com/pulse/traditional-monolithic-vs-3-tier-architectures-james-juma-sindani/',
       content: 

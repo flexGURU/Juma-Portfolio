@@ -26,12 +26,10 @@ export class AppComponent implements OnInit{
 
   title = 'James Juma';
 
-
   constructor(private activatedRoute: ActivatedRoute){}
 
   ngOnInit(): void {
     this.activatedRoute.fragment.subscribe((fragment) => {
-      console.log(fragment);
       this.scrollToPage(fragment)
       
     })
