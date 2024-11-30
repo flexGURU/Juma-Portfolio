@@ -12,78 +12,22 @@
         </div>     
     </div>
     
-
     <div class="relative mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 max-w-screen-lg items-center">
 
-        <div class=" bg-[#0b1a41] border  border-gray-600 rounded-lg text-center md:text-left">
+        <div
+        *ngFor="let test of tests" 
+        class=" bg-[#0b1a41] border  border-gray-600 rounded-lg text-center md:text-left">
 
             <div class="flex flex-col md:flex-row items-center gap-4">
-                <img src="../../../assets/samson.jpeg" class="col-span-1 border rounded-full m-2 w-1/4 md:w-1/5" alt="">
+                <img src="{{test.imgPath}}" class="col-span-1 border rounded-full m-2 w-1/4 md:w-1/5" alt="">
                 <div class="col-span-2">
-                    <h3 class="font-bold ml-2 text-lg col-span-2">Cloud Architecture and Design</h3>
-                    <p class="ml-2 text-[#1e90ff]">Technical Consultant &#64; BUI</p>
+                    <h3 class="font-bold ml-2 text-lg col-span-2"> {{test.title}} </h3>
+                    <p class="ml-2 text-[#1e90ff]"> {{test.position}} </p>
                 </div>
             </div>
             <p class="p-4 text-slate-400 text-sm">
-                I specialize in creating secure and scalable cloud architectures. 
-                My expertise spans multi-cloud platforms like AWS, Azure, and Google Cloud. 
-                I excel in designing hybrid environments that integrate seamlessly with on-premise systems. 
+                {{test.content}}
             </p>                 
         </div>
-
-
-            
-            <div class=" bg-[#0b1a41] border border-gray-600 rounded-lg text-center md:text-left">
-
-                <div class="flex flex-col md:flex-row items-center gap-4">
-                    <img src="../../../assets/samson.jpeg" class="col-span-1 border rounded-full m-2 w-1/4 md:w-1/5" alt="">
-                    <div class="col-span-2">
-                        <h3 class="font-bold ml-2 text-lg col-span-2">Cloud Architecture and Design</h3>
-                        <p class="ml-2 text-[#1e90ff]">Technical Consultant &#64; BUI</p>
-                    </div>
-                </div>
-                <p class="p-4 text-slate-400 text-sm">
-                    I specialize in creating secure and scalable cloud architectures. 
-                    My expertise spans multi-cloud platforms like AWS, Azure, and Google Cloud. 
-                    I excel in designing hybrid environments that integrate seamlessly with on-premise systems. 
-                </p>                 
-            </div>
-
-
-            
-
-            <div class=" bg-[#0b1a41] border border-gray-600 rounded-lg text-center md:text-left">
-
-                <div class="flex flex-col md:flex-row items-center gap-4">
-                    <img src="../../../assets/samson.jpeg" class="col-span-1 border rounded-full m-2 w-1/4 md:w-1/5" alt="">
-                    <div class="col-span-2">
-                        <h3 class="font-bold ml-2 text-lg col-span-2">Cloud Architecture and Design</h3>
-                        <p class="ml-2 text-[#1e90ff]">Technical Consultant &#64; BUI</p>
-                    </div>
-                </div>
-                <p class="p-4 text-slate-400 text-sm">
-                    I specialize in creating secure and scalable cloud architectures. 
-                    My expertise spans multi-cloud platforms like AWS, Azure, and Google Cloud. 
-                    I excel in designing hybrid environments that integrate seamlessly with on-premise systems. 
-                </p>                 
-            </div>
-
-            
-            <div class="bg-[#0b1a41] border border-gray-600 rounded-lg text-center md:text-left mb-5 md:mb-0">
-
-                <div class="flex flex-col md:flex-row items-center gap-4">
-                    <img src="../../../assets/samson.jpeg" class="col-span-1 border rounded-full m-2 w-1/4 md:w-1/5" alt="">
-                    <div class="col-span-2">
-                        <h3 class="font-bold ml-2 text-lg col-span-2">Cloud Architecture and Design</h3>
-                        <p class="ml-2 text-[#1e90ff]">Technical Consultant &#64; BUI</p>
-                    </div>
-                </div>
-                <p class="p-4 text-slate-400 text-sm">
-                    I specialize in creating secure and scalable cloud architectures. 
-                    My expertise spans multi-cloud platforms like AWS, Azure, and Google Cloud. 
-                    I excel in designing hybrid environments that integrate seamlessly with on-premise systems. 
-                </p>                 
-            </div>
-         
-    
+     
 </div>

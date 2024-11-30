@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
@@ -23,6 +24,7 @@ export class BlogComponent {
     {
       title: 'Aws Cloud Roles',
       time: '3 min',
+      imgPath: '../../../assets/roles.jpeg',
       content: 
      `The cloud has changed how we work. It's no longer just a place where you can store your files. 
       It's a tool that allows you to create and grow your business, from anywhere in the world. 
@@ -32,6 +34,7 @@ export class BlogComponent {
     {
       title: 'Traditional Monolithic vs 3-Tier Architectures',
       time: '4 min',
+      imgPath: '../../../assets/mon.jpeg',
       content: 
       `When it comes to building and deploying software, there are a variety of architectural patterns to choose from. 
       One popular option is the 3-tier architecture, which is a variation of the traditional monolithic architecture. In this post, we'll discuss the two architectures, highlighting their pros and cons.`
