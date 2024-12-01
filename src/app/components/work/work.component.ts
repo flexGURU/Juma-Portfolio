@@ -27,6 +27,19 @@ export class WorkComponent {
     },
 
     {
+      title: 'Cloud Solutions Architect',
+      company: 'Silicon Overdrive',
+      duration: 'Jan 2022 - December 2023',
+      type: 'Full Time',
+      highlights: [
+        'Participated in architectural discussions to ensure solutions are designed for successful deployment in the cloud',
+        'Created AWS Proposals in line with client requirements',
+        'Captured and Architected secure, scalable, and highly available environments on AWS for clients following the principles of the AWS Well-Architected Framework',
+        'Assisting the Sales and Engineering Teams to technically engage with clients by offering pre-sales assistance or advice where needed'
+      ]
+    },
+
+    {
       title: 'Co-Founder & Partnership Manager',
       company: 'Resource Cloud Academy',
       duration: 'January 2022 - Present',

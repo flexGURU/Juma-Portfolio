@@ -10,6 +10,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { TestimonialsComponent } from "./components/testimonials/testimonials.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { AchievementsComponent } from "./components/achievements/achievements.component";
+import { GalleryComponent } from "./components/gallery/gallery.component";
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { AchievementsComponent } from "./components/achievements/achievements.co
     AboutComponent, WorkComponent, SkillsComponent,
     TalksComponent, BlogComponent, TestimonialsComponent,
     ContactComponent,
-    AchievementsComponent
+    AchievementsComponent,
+    GalleryComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

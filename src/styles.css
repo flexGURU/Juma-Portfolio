@@ -24,7 +24,7 @@
 }
 
 .bg-achieve {
-    @apply bg-custom-blue-4;
+    @apply bg-gradient-to-r from-custom-blue-2 to-custom-blue-1 ;
 }
 
 .btn {
@@ -63,6 +63,9 @@
     @apply font-bold hover:text-blue-500 hover:border-b-2 border-[#1e90ff]; 
 }
 
+.nav-mobile {
+    @apply hover:text-blue-500 hover:border-b-2 border-[#1e90ff];
+}
 
 
 
