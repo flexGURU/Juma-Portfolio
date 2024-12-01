@@ -87,15 +87,13 @@
     
 
     <div class="flex flex-col gap-2">
-        <div class="grid md:grid-cols-2 gap-2">
-            <img class="h-auto max-w-full rounded-lg" src="../../../assets/1.jpg" alt="">
-            <img class="h-auto max-w-full rounded-lg" src="../../../assets/2.jpg" alt="">
-
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
         
-            <div *ngFor="let img of imgPathLg">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+        
+            <div
+            class="transition duration-300 ease-in opacity-75 hover:opacity-100" 
+            *ngFor="let img of imgPathLg">
                 <img class="h-auto max-w-full rounded-lg" src="{{img}}" alt="">
             </div>
            
