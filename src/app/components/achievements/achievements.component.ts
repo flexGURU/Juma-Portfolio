@@ -16,6 +16,7 @@ export class AchievementsComponent {
   navigateTo(){
     window.open('https://www.theeastafrican.co.ke/tea/business-tech/phone-firms-turn-to-software-vending-4824524', "_blank")
   }
+ 
 
 
 
